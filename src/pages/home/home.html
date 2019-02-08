@@ -101,7 +101,7 @@
   <button ion-button block round>Login</button> -->
 
   <!-- list section -->
-  <ion-list>
+  <!-- <ion-list> -->
     <!-- <ion-item-divider>First 2 items</ion-item-divider>
     <button ion-item>List item 1</button>
     <button ion-item>List item 2</button>
@@ -109,7 +109,7 @@
     <button ion-item>List item 3</button>
     <button ion-item>List item 4</button> -->
 
-    <ion-list-header>
+    <!-- <ion-list-header>
       Action
     </ion-list-header>
     <ion-item>Termintor II</ion-item>
@@ -169,5 +169,181 @@
       <h2>title</h2>
       <p>some desc</p>
     </ion-item>
+  </ion-list> -->
+
+  <!-- sliding list section -->
+  <!-- <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="http://via.placeholder.com/64x64" />
+        </ion-avatar>
+        <h2>some item</h2>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button clear color="danger">
+          <ion-icon name="call"></ion-icon>
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        some item
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="danger">
+          Call
+        </button>
+        <button ion-button color="primary">
+          SMS
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list> -->
+
+  <!-- card section -->
+
+  <!-- <ion-card>
+    <ion-card-header>
+      This is card header
+    </ion-card-header>
+    <img src="http://via.placeholder.com/300x200" />
+
+    <ion-list>
+      <button ion-item>
+        <ion-icon name="text" item-start></ion-icon>
+        Hello
+      </button>
+      <button ion-item>
+        <ion-icon name="text" item-end></ion-icon>
+          Hello to you too
+        </button>
+    </ion-list>
+
+    <ion-card-content>
+      This is an Ionic card. It can be used to display any content, including pictures.
+    </ion-card-content>
+  </ion-card> -->
+
+  <!-- grid section -->
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+        Colmnu 1
+      </ion-col>
+      <ion-col>
+          Colmnu 2
+        </ion-col>
+        <ion-col>
+            Colmnu 3
+          </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+          Colmnu 1
+        </ion-col>
+        <ion-col>
+            Colmnu 2
+          </ion-col>
+          
+      </ion-row>
+  </ion-grid> -->
+
+  <!-- basic interactions part 1-->
+
+  <!-- <ion-list>
+    <ion-list-header>
+      Login
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
   </ion-list>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button block outline (click)="login()">Login</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button block outline (click)="cancel()">Cancel</button>
+      </ion-col>
+    </ion-row>
+    </ion-grid> -->
+
+    <!-- basic interaction part 2 -->
+    <ion-list>
+        <ion-list-header>
+          Sign up
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Confirm Password</ion-label>
+            <ion-input type="password" [(ngModel)]="confirmPassword"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            User Type
+          </ion-label>
+
+          <ion-select [(ngModel)]="userType">
+            <ion-option value="admin">Admin</ion-option>
+            <ion-option value="user">User</ion-option>
+          </ion-select>
+
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Send notification</ion-label>
+          <ion-checkbox [(ngModel)]="notification"></ion-checkbox>
+        </ion-item>
+    
+      </ion-list>
+    
+      <ion-list radio-group [(ngModel)]="gender">
+        <ion-list-header>
+          Gender
+        </ion-list-header>
+        <ion-item>
+          <ion-label>Male</ion-label>
+          <ion-radio value="m"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Female</ion-label>
+          <ion-radio value="f"></ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <button ion-button block outline (click)="login()">Login</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button block outline (click)="cancel()">Cancel</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
 </ion-content>
