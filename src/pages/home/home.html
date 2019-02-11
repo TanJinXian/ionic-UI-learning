@@ -343,7 +343,33 @@
             <button ion-button block outline (click)="cancel()">Cancel</button>
           </ion-col>
         </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <button ion-button block outline (click)="loading()">loading</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button block outline (click)="alert()">Alert</button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <button ion-button block outline (click)="toast()">Toast</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button block outline (click)="actionSheet()">ActionSheet</button>
+          </ion-col>
+        </ion-row>
       </ion-grid>
 
+      <ion-row>
+        <ion-col>
+          <button ion-button block outline (click)="goToOffice()">Office Page</button>
+        </ion-col>
+        <ion-col>
+          <button ion-button block outline (click)="openModal()">Open Modal</button>
+        </ion-col>
+      </ion-row>
 
 </ion-content>
